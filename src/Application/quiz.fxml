@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Application.QuizController">
+
+    <TextField fx:id="playerNameField" promptText="Enter your name"/>
+    <Label fx:id="timerLabel" text="Time Left: 30"/>
+    <Label fx:id="questionLabel" wrapText="true"/>
+
+    <RadioButton fx:id="option1"/>
+    <RadioButton fx:id="option2"/>
+    <RadioButton fx:id="option3"/>
+    <RadioButton fx:id="option4"/>
+
+    <HBox spacing="10">
+        <Button text="Next" onAction="#nextQuestion"/>
+        <Button text="Restart" onAction="#restartGame"/>
+        <Button text="Exit" onAction="#exitGame"/>
+    </HBox>
+
+    <Label fx:id="scoreLabel"/>
+</VBox>
